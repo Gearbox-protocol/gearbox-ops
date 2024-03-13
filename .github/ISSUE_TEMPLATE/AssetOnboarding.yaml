@@ -18,6 +18,11 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
+  - type: input
+    id: asset
+    attributes:
+      label: Asset
+      description: Please provide smart contract address of onboarded asset
   - type: textarea
     id: description
     attributes:
