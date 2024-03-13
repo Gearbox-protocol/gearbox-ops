@@ -1,0 +1,65 @@
+name: New Asset Onboarding
+description: For for onboarding new asset
+title: "[Feature]: "
+labels: ["feature-request"]
+projects: ["Gearbox Ops"]
+assignees:
+  - 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this asset onboarding form!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Also tell us, what asset you want to onboard and why?
+      placeholder: Tell us what you see!
+      value: "Motivation"
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: Network
+      multiple: true
+      description: Which network do you want to onboard the asset to?
+      options:
+        - Ethereum
+        - Arbitrum
+      default: 0
+      required: true
+    validations:
+      required: true
+  - type: dropdown
+    id: pool
+    attributes:
+      label: Which pools do you want to add the asset to?
+      multiple: true
+      options:
+        - WETH
+        - WBTC
+        - USDC
+      required: true
+  - type: textarea
+    id: oracle
+    attributes:
+      label: Oracles
+      description: Please provide list of supported oracles in format {Oracle provider, Link to oracle}. Provide as much oracle as you can. 
+      render: shell
+      required: true
+  - type: textarea
+    id: liquidity
+    attributes:
+      label: Liquidity sources
+      description: Please provide list of pools on DEXes where this asset is traded in format {DEX name, Pool name, Link to pool}. Provide as much pools as you can. 
+      render: shell
