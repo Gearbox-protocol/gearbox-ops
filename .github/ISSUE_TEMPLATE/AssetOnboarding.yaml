@@ -23,6 +23,8 @@ body:
     attributes:
       label: Asset
       description: Please provide smart contract address of onboarded asset
+    validations:
+      required: true
   - type: textarea
     id: description
     attributes:
