@@ -39,7 +39,6 @@ body:
     attributes:
       label: TVL
       description: Please provide information on how much TVL has protocol.
-      render: shell
     validations:
       required: true
   - type: textarea
