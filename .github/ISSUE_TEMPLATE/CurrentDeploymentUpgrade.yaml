@@ -1,0 +1,29 @@
+name: Upgrade of Current Deployment Parameters
+description: Changes of LTV, Rates etc 
+title: "[Feature]: "
+labels: ["feature-request"]
+projects: ["Gearbox Ops"]
+assignees:
+  - 
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this asset onboarding form!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Also tell us, what and why should be done? 
+      placeholder: Tell us what you see!
+      value: "Motivation"
+    validations:
+      required: true
