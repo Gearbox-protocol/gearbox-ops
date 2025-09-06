@@ -1,5 +1,5 @@
 name: Epic
-description: Template for large initiatives (epics)
+description: Template for large initiatives
 title: "<Short title>"
 body:
   - type: dropdown
@@ -23,7 +23,7 @@ body:
     id: checklist
     attributes:
       label: Checklist
-      description: Steps required to complete this epic.
+      description: Steps required to complete this task.
       value: |
         - [ ] Tokens & price feeds are added to Price Feed Store
         - [ ] GIP is created on PI and is ready for tests
