@@ -20,6 +20,11 @@ body:
       description: Which network is this related to?
       placeholder: Ethereum / Arbitrum / Optimism/ Etherlink
   - type: textarea
+    id: context
+    attributes:
+      label: Task context
+      description: Goal, stakeholders, perspectives etc.
+  - type: textarea
     id: checklist
     attributes:
       label: Checklist
