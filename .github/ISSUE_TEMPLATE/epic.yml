@@ -24,7 +24,7 @@ body:
     attributes:
       label: Checklist
       description: Steps required to complete this epic.
-      placeholder: |
+      value: |
         - [ ] Tokens & price feeds are added to Price Feed Store
         - [ ] GIP is created on PI and is ready for tests
         - [ ] Router setup
@@ -40,7 +40,8 @@ body:
     attributes:
       label: Links
       description: References, specs, or related resources.
-      placeholder: |
-        - GIP draft: <url>
-        - Deploy tx: <hash>
-        - Design doc: <url>
+      value: |
+        - GIP draft in PI:
+        - Anvil fork link:
+        - Strategies description:
+        - Tokens' info (icons etc.):
