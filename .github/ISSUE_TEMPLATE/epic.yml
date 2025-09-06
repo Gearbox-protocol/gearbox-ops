@@ -1,0 +1,46 @@
+name: Epic
+description: Template for large initiatives (epics)
+title: "<Short title>"
+body:
+  - type: dropdown
+    id: epic_type
+    attributes:
+      label: Type
+      description: What kind of initiative is this?
+      options:
+        - Create new market
+        - Launch on new chain
+        - Modify existing market
+        - Test new feature
+        - Other
+  - type: input
+    id: chain
+    attributes:
+      label: Chain
+      description: Which network is this related to?
+      placeholder: Ethereum / Arbitrum / Optimism/ Etherlink
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Steps required to complete this epic.
+      placeholder: |
+        - [ ] Tokens & price feeds are added to Price Feed Store
+        - [ ] GIP is created on PI and is ready for tests
+        - [ ] Router setup
+        - [ ] Router tests passed
+        - [ ] Credit Accounts tests passed
+        - [ ] Frontend: icons & strategies added
+        - [ ] TS liquidations tests passed
+        - [ ] GO liquidations tests passed
+        - [ ] Charts support added
+        - [ ] Incentives setup
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: References, specs, or related resources.
+      placeholder: |
+        - GIP draft: <url>
+        - Deploy tx: <hash>
+        - Design doc: <url>
